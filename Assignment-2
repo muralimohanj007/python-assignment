@@ -1,0 +1,63 @@
+1. Scenario: A company wants to analyze the sales performance of its products in different regions. They have collected the following data:
+   Region A: [10, 15, 12, 8, 14]
+   Region B: [18, 20, 16, 22, 25]
+   Calculate the mean sales for each region.
+Ans:
+    Mean for Region A = (10 + 15 + 12 + 8 + 14) / 5
+    = 59 / 5
+    = 11.8
+    Mean for Region B = (18 + 20 + 16 + 22 + 25) / 5
+    = 101 / 5
+    = 20.2
+
+    In summary:
+
+    The mean sales for Region A is 11.8.
+    The mean sales for Region B is 20.2.   
+
+2. Scenario: A survey is conducted to measure customer satisfaction on a scale of 1 to 5. The data collected is as follows:
+   [4, 5, 2, 3, 5, 4, 3, 2, 4, 5]
+   Calculate the mode of the survey responses.
+Ans:   
+To find the mode, let's count the frequency of each response:
+
+2 appears twice
+3 appears twice
+4 appears three times
+5 appears three times
+Both 4 and 5 have the highest frequency, occurring three times each. Therefore, the mode of the survey responses is 4 and 5.
+
+
+3. Scenario: A company wants to compare the salaries of two departments. The salary data for Department A and Department B are as follows:
+   Department A: [5000, 6000, 5500, 7000]
+   Department B: [4500, 5500, 5800, 6000, 5200]
+   Calculate the median salary for each department.
+Ans:
+    Department A:
+    Salary data: [5000, 6000, 5500, 7000]
+
+    Arranging the data in ascending order: [5000, 5500, 6000, 7000]
+
+    Since there are four data points, the median will be the average of the two middle values:
+
+    Median for Department A = (5500 + 6000) / 2
+    = 11500 / 2
+    = 5750
+
+    Therefore, the median salary for Department A is 5750.
+
+    Department B:
+    Salary data: [4500, 5500, 5800, 6000, 5200]
+
+    Arranging the data in ascending order: [4500, 5200, 5500, 5800, 6000]
+
+    Since there are five data points, the median will be the middle value:
+
+    Median for Department B = 5500
+
+    Therefore, the median salary for Department B is 5500.
+
+    In summary:
+
+    The median salary for Department A is 5750.
+    The median salary for Department B is 5500.
