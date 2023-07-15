@@ -1,0 +1,79 @@
+Naive Approach:
+
+1. What is the Naive Approach in machine learning?
+Ans:The Naive Approach, also known as the Naive Bayes Classifier, is a simple and commonly used machine learning algorithm for classification tasks. 
+    It is based on the principle of Bayes' theorem and assumes that the features (or attributes) in a dataset are conditionally independent of each other given the class labels.
+    The Naive Bayes algorithm calculates the probability of a data instance belonging to a particular class based on the occurrence of its features. 
+    It assumes that the features are independent, meaning that the presence or absence of one feature does not affect the presence or absence of other features.
+2. Explain the assumptions of feature independence in the Naive Approach.
+Ans: It's important to note that while the feature independence assumption may not hold in all cases, Naive Bayes can still be effective and provide good results. 
+     In practice, the algorithm can learn and capture probabilistic relationships between features and class labels, even if the assumption of feature independence is violated to some extent.
+
+KNN:
+
+10. What is the K-Nearest Neighbors (KNN) algorithm?
+Ans:The KNN algorithm does not involve explicit training or model building, as it relies solely on the stored training data for predictions. 
+    This makes it easy to implement and understand, and it can handle complex decision boundaries. However, the algorithm's main drawback is its computational complexity during the prediction phase, as it requires calculating distances for each new data point against all training data. 
+    This can  be inefficient for large datasets.
+11. How does the KNN algorithm work?
+Ans:During the prediction phase, KNN can be computationally expensive, especially for large datasets, as it requires calculating distances for each new data point against all training data. Approximation techniques, such as using data structures like KD-trees or ball trees, can be employed to speed up the search for nearest neighbors.
+
+Clustering:
+
+19. What is clustering in machine learning?
+Ans:Clustering in machine learning is a technique used to group similar data points together based on their intrinsic characteristics or patterns. 
+    It is an unsupervised learning method that aims to discover hidden structures or clusters within a dataset without any prior knowledge of class labels or target variables.
+20. Explain the difference between hierarchical clustering and k-means clustering.
+Ans:K-means: This algorithm aims to partition the data into a predetermined number of clusters. It iteratively assigns data points to the nearest cluster centroid and updates the centroids until convergence is reached.
+    Hierarchical clustering: This algorithm builds a hierarchy of clusters by recursively merging or splitting clusters based on their similarity. It can be agglomerative (bottom-up) or divisive (top-down).
+
+Anomaly Detection:
+
+27. What is anomaly detection in machine learning?
+Ans:Anomaly detection in machine learning refers to the process of identifying data points or patterns that deviate significantly from the norm or expected behavior within a dataset. Anomalies, also known as outliers, are data points that exhibit unusual or rare characteristics compared to the majority of the data.
+28. Explain the difference between supervised and unsupervised anomaly detection.
+Ans:supervised anomaly detection relies on labeled data to explicitly train the algorithm to distinguish between normal and anomalous instances. 
+    Unsupervised anomaly detection, on the other hand, does not rely on labeled data and instead focuses on identifying deviations or anomalies based on the inherent structure or patterns of the data.
+
+Dimension Reduction:
+
+34. What is dimension reduction in machine learning?
+Ans:Dimension reduction in machine learning refers to the process of reducing the number of input features or variables in a dataset while preserving the essential information. 
+     It is a technique used to handle high-dimensional data by transforming or projecting it into a lower-dimensional space.
+35. Explain the difference between feature selection and feature extraction.
+Ans:Feature selection focuses on selecting a subset of original features based on their individual relevance or importance for the learning task, while discarding the rest.
+    Feature extraction creates new features by combining or transforming the original features to capture the essential information or structure in the data, resulting in a lower-dimensional representation.
+
+Data Drift Detection:
+
+46. What is data drift in machine learning?
+Ans:Data drift in machine learning refers to the phenomenon where the statistical properties of the training data used to build a machine learning model change over time, leading to a degradation in model performance. 
+    It occurs when the underlying data distribution evolves or shifts, making the model less accurate or even invalid for making predictions on new data.
+47. Why is data drift detection important?
+Ans:Data drift is important in machine learning as it affects model performance, reliability, decision confidence, fairness, compliance, and the need for model maintenance.
+    Monitoring and addressing data drift help ensure accurate and trustworthy predictions, adapt to evolving data, and mitigate risks associated with outdated or biased models.
+
+Data Leakage:
+
+51. What is data leakage in machine learning?
+Ans:Data leakage in machine learning refers to the unintended flow of information from the training data into the model during the learning process, leading to overly optimistic or misleading performance estimates.
+    It occurs when information that would not be available in a real-world scenario or during deployment is unintentionally included in the training data.
+52. Why is data leakage a concern?
+Ans:Data leakage is a significant concern in machine learning as it can lead to overestimated model performance, poor generalization, unreliable predictions, biased outcomes, legal and ethical implications, and wasted resources. 
+    Mitigating data leakage is crucial to ensure accurate and fair modeling, maintain compliance, and avoid detrimental consequences in real-world applications.
+
+Cross Validation:
+
+57. What is cross-validation in machine learning?
+Ans:Cross-validation is a technique in machine learning that involves dividing the dataset into subsets, using some for training and others for validation.
+    It helps evaluate a model's performance and generalization by repeatedly training and testing on different data splits. Cross-validation provides a more robust estimate of model performance and helps mitigate overfitting.
+58. Why is cross-validation important?
+Ans:Cross-validation is important in machine learning as it provides a more reliable estimate of model performance, helps assess generalization ability, aids in model selection and hyperparameter tuning, detects overfitting, and maximizes data utilization.
+    It ensures more robust and trustworthy evaluation of models and enables better decision-making in model development and deployment.
+
+
+
+
+
+
+
