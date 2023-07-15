@@ -1,0 +1,107 @@
+General Linear Model:
+
+1. What is the purpose of the General Linear Model (GLM)?
+Ans:The purpose of the General Linear Model (GLM) is to analyze and model the relationship between a dependent variable and one or more independent variables. 
+    It is a flexible and widely used statistical framework that encompasses various regression models, including simple linear regression, multiple linear regression, logistic regression, analysis of variance (ANOVA), and analysis of covariance (ANCOVA).
+2.What are the key assumptions of the General Linear Model?
+Ans:The GLM assumes a linear relationship between the dependent variable and the independent variables, allowing researchers to examine the effects of different predictors on the outcome of interest. 
+    It provides a systematic way to estimate the regression coefficients, assess the statistical significance of the predictors, make predictions, and infer about population parameters.
+3. How do you interpret the coefficients in a GLM?
+Ans:The coefficients in a GLM represent the relationship between the independent variables and the dependent variable. In simple linear regression, the coefficient shows the change in the dependent variable for a one-unit increase in the independent variable. 
+    In logistic regression, the coefficients are expressed as odds ratios or log-odds ratios, indicating the change in odds or log-odds associated with a one-unit change in the independent variable. 
+    Interpretation should consider context, statistical significance, and potential interactions. Consult domain experts or resources for accurate and context-specific interpretations.
+4. What is the difference between a univariate and multivariate GLM?
+Ans:The key difference between univariate and multivariate GLMs is the number of dependent variables being analyzed. Univariate GLMs focus on a single dependent variable, while multivariate GLMs consider multiple dependent variables simultaneously.
+5. Explain the concept of interaction effects in a GLM.
+Ans: Interaction effects in a GLM provide a means to explore how the relationship between variables may change or be modified by the presence or level of other variables, enhancing our understanding of the underlying dynamics and complexity of the model.
+
+Regression:
+
+11. What is regression analysis and what is its purpose?
+Ans:Regression analysis serves as a powerful tool for understanding and modeling relationships between variables, making predictions, testing hypotheses, and informing decision-making processes in various fields of study.
+12.What is the difference between simple linear regression and multiple linear regression?
+Ans:The key difference between simple linear regression and multiple linear regression is the number of independent variables. 
+    Simple linear regression involves one independent variable, while multiple linear regression involves two or more independent variables. 
+    Multiple linear regression allows for examining the simultaneous effects of multiple predictors on the dependent variable, while simple linear regression focuses on the relationship between a single predictor and the dependent variable.
+
+Loss function:
+
+21. What is a loss function and what is its purpose in machine learning?
+Ans:A loss function, also known as an error function or cost function, is a mathematical function used in machine learning to measure the inconsistency or error between predicted values and actual values. 
+    The purpose of a loss function is to quantify how well a machine learning model is performing and provide a measure to optimize the model's parameters during the training process. By minimizing the loss function, the model aims to improve its predictive accuracy.
+22. What is the difference between a convex and non-convex loss function?
+Ans:Convex Loss Function: A convex loss function has a bowl-like shape and a unique global minimum. 
+      This property ensures that the optimization process converges to the global minimum, meaning it will find the best solution regardless of the initialization.
+      Examples of convex loss functions include mean squared error (MSE) and mean absolute error (MAE).
+    Non-convex Loss Function: A non-convex loss function has multiple local minima and may have a more complex shape. 
+      The optimization process in non-convex scenarios can be more challenging, as it is susceptible to getting stuck in local minima instead of converging to the global minimum. 
+      Non-convex loss functions pose additional difficulties in training machine learning models.
+23. What is mean squared error (MSE) and how is it calculated?
+Ans:Mean Squared Error (MSE) is a widely used loss function that measures the average squared difference between the predicted values and the actual values. It quantifies the average magnitude of the squared residuals. 
+    MSE is calculated by taking the sum of the squared differences between the predicted and actual values and dividing it by the total number of samples. The formula for MSE is:
+    MSE = (1/n) * Σ(yᵢ - ȳ)²
+    where yᵢ represents the actual values, ȳ represents the predicted values, and n represents the number of samples.
+    The advantage of MSE is that it gives higher weights to larger errors due to the squaring operation. However, it is sensitive to outliers since the squared term amplifies their effect.
+24. What is mean absolute error (MAE) and how is it calculated?
+Ans:Mean Absolute Error (MAE) is a loss function that measures the average absolute difference between the predicted values and the actual values. Unlike MSE, MAE does not involve squaring the differences, making it less sensitive to outliers. MAE is calculated by taking the sum of the absolute differences between the predicted and actual values and dividing it by the total number of samples. The formula for MAE is:
+    MAE = (1/n) * Σ|yᵢ - ȳ|
+    
+    where yᵢ represents the actual values, ȳ represents the predicted values, and n represents the number of samples.
+    
+    MAE provides a more interpretable error metric since it represents the average magnitude of errors. However, it gives equal weight to all errors, regardless of their magnitude.
+
+Optimizer (GD):
+
+31. What is an optimizer and what is its purpose in machine learning?
+Ans:The purpose of an optimizer is to find the optimal set of parameters that minimize the objective function. 
+This is achieved through an iterative process of updating the parameters based on the calculated gradients of the objective function with respect to the parameters. 
+The gradients indicate the direction and magnitude of change needed to improve the model's performance.
+32. What is Gradient Descent (GD) and how does it work?
+Gradient Descent (GD) is an iterative optimization algorithm commonly used in machine learning to find the minimum of a differentiable objective function. 
+It works by iteratively adjusting the parameters of a model in the direction of the steepest descent of the objective function.
+
+Regularization:
+
+41. What is regularization and why is it used in machine learning?
+Ans:In machine learning, regularization refers to a set of techniques used to prevent overfitting and improve the generalization ability of a model. 
+    Overfitting occurs when a model becomes too complex and learns to fit the training data very well, but performs poorly on unseen data.
+42. What is the difference between L1 and L2 regularization?
+Ans:L1 regularization encourages sparsity and feature selection by driving some coefficients to zero, while L2 regularization reduces the magnitude of the coefficients without explicitly driving them to zero. The choice between L1 and L2 regularization depends on the specific requirements of the problem, the importance of feature selection, and the characteristics of the dataset.
+
+SVM:
+
+51. What is Support Vector Machines (SVM) and how does it work?
+Ans:Support Vector Machines (SVM) is a supervised machine learning algorithm used for classification and regression tasks. 
+    It aims to find the optimal hyperplane that separates data points of different classes or predicts continuous values in regression.
+52. How does the kernel trick work in SVM?
+Ans:The kernel trick is a fundamental concept in Support Vector Machines (SVM) that allows for nonlinear classification by implicitly mapping the data into a higher-dimensional feature space without explicitly calculating the transformed features. 
+    This technique overcomes the limitation of SVMs in handling linearly inseparable data in the original feature space.
+
+
+Decision Trees:
+
+61. What is a decision tree and how does it work?
+Ans:A decision tree is a supervised machine learning algorithm that is widely used for both classification and regression tasks. 
+    It creates a model in the form of a tree structure where each internal node represents a feature or attribute, each branch represents a decision based on that feature, and each leaf node represents the outcome or prediction.
+62. How do you make splits in a decision tree?
+Ans:In a decision tree, the process of making splits involves selecting the best feature and corresponding threshold or condition to divide the data into homogeneous subsets. 
+    The selection of the best split is typically based on a criterion that maximizes the homogeneity or information gain in the resulting subsets. 
+
+Ensemble Techniques:
+
+71. What are ensemble techniques in machine learning?
+Ans:Ensemble techniques in machine learning involve combining multiple models, called base learners, to create a stronger, more accurate, and robust predictive model. 
+    Ensemble methods leverage the diversity and collective wisdom of multiple models to improve generalization and reduce the risk of overfitting. These methods have proven to be highly effective and widely used in various machine learning tasks. 
+72. What is bagging and how is it used in ensemble learning?
+Ans:Bagging (Bootstrap Aggregating): Bagging involves creating multiple base models by training them on different subsets of the training data. 
+    Each base model is trained independently, and their predictions are combined using voting (for classification) or averaging (for regression) to make the final prediction.
+    Examples include Random Forest, which combines decision trees, and Extra Trees, which further randomizes the splitting process.
+
+
+
+
+
+
+
+
+
