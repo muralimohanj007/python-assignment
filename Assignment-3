@@ -1,0 +1,145 @@
+1. Scenario: A company wants to analyze the sales performance of its products in different regions. They have collected the following data:
+   Region A: [10, 15, 12, 8, 14]
+   Region B: [18, 20, 16, 22, 25]
+   Calculate the mean sales for each region.
+Ans:
+    Mean for Region A = (10 + 15 + 12 + 8 + 14) / 5
+    = 59 / 5
+    = 11.8
+    Mean for Region B = (18 + 20 + 16 + 22 + 25) / 5
+    = 101 / 5
+    = 20.2
+
+    In summary:
+
+    The mean sales for Region A is 11.8.
+    The mean sales for Region B is 20.2.   
+
+2. Scenario: A survey is conducted to measure customer satisfaction on a scale of 1 to 5. The data collected is as follows:
+   [4, 5, 2, 3, 5, 4, 3, 2, 4, 5]
+   Calculate the mode of the survey responses.
+Ans:   
+   To find the mode, let's count the frequency of each response:
+
+   2 appears twice
+   3 appears twice
+   4 appears three times
+   5 appears three times
+   Both 4 and 5 have the highest frequency, occurring three times each. Therefore, the mode of the survey responses is 4 and 5.
+
+
+3. Scenario: A company wants to compare the salaries of two departments. The salary data for Department A and Department B are as follows:
+   Department A: [5000, 6000, 5500, 7000]
+   Department B: [4500, 5500, 5800, 6000, 5200]
+   Calculate the median salary for each department.
+Ans:
+    Department A:
+    Salary data: [5000, 6000, 5500, 7000]
+
+    Arranging the data in ascending order: [5000, 5500, 6000, 7000]
+
+    Since there are four data points, the median will be the average of the two middle values:
+
+    Median for Department A = (5500 + 6000) / 2
+    = 11500 / 2
+    = 5750
+
+    Therefore, the median salary for Department A is 5750.
+
+    Department B:
+    Salary data: [4500, 5500, 5800, 6000, 5200]
+
+    Arranging the data in ascending order: [4500, 5200, 5500, 5800, 6000]
+
+    Since there are five data points, the median will be the middle value:
+
+    Median for Department B = 5500
+
+    Therefore, the median salary for Department B is 5500.
+
+    In summary:
+
+    The median salary for Department A is 5750.
+    The median salary for Department B is 5500.
+4.6. Scenario: A company wants to analyze the relationship between advertising expenditure and sales. The data collected is as follows:
+   Advertising Expenditure (in thousands): [10, 15, 12, 8, 14]
+   Sales (in thousands): [25, 30, 28, 20, 26]
+   Calculate the correlation coefficient between advertising expenditure and sales.
+Ans:
+   Step 1: Calculate the means of both variables.
+      Mean of Advertising Expenditure = (10 + 15 + 12 + 8 + 14) / 5
+      = 59 / 5
+      = 11.8
+      
+      Mean of Sales = (25 + 30 + 28 + 20 + 26) / 5
+      = 129 / 5
+      = 25.8
+   Step 2: Calculate the deviations from the means for both variables.  
+      Deviation of Advertising Expenditure = [10 - 11.8, 15 - 11.8, 12 - 11.8, 8 - 11.8, 14 - 11.8]
+      = [-1.8, 3.2, 0.2, -3.8, 2.2]
+      
+      Deviation of Sales = [25 - 25.8, 30 - 25.8, 28 - 25.8, 20 - 25.8, 26 - 25.8]
+      = [-0.8, 4.2, 2.2, -5.8, 0.2]
+      
+   Step 3: Calculate the product of the deviations for each pair of data points.
+      Product of Deviations = [-1.8 * -0.8, 3.2 * 4.2, 0.2 * 2.2, -3.8 * -5.8, 2.2 * 0.2]
+      = [1.44, 13.44, 0.44, 22.04, 0.44]
+   Step 4: Calculate the sums of the squared deviations for each variable.
+   
+      Sum of Squared Deviations of Advertising Expenditure = (-1.8)^2 + (3.2)^2 + (0.2)^2 + (-3.8)^2 + (2.2)^2
+      = 3.24 + 10.24 + 0.04 + 14.44 + 4.84
+      = 32.8
+      
+      Sum of Squared Deviations of Sales = (-0.8)^2 + (4.2)^2 + (2.2)^2 + (-5.8)^2 + (0.2)^2
+      = 0.64 + 17.64 + 4.84 + 33.64 + 0.04
+      = 57.8
+   Step 5: Calculate the square roots of the sums of squared deviations.
+   
+   Square Root of Sum of Squared Deviations of Advertising Expenditure = sqrt(32.8) = 5.73
+   Square Root of Sum of Squared Deviations of Sales = sqrt(57.8) = 7.61
+   
+   Step 6: Calculate the sum of the product of deviations.
+   
+   Sum of Product of Deviations = 1.44 + 13.44 + 0.44 + 22.04 + 0.44
+   = 37.8
+   
+   Step 7: Calculate the correlation coefficient (Pearson's r).
+   
+   r = (Sum of Product of Deviations) / (Square Root of Sum of Squared Deviations of Advertising Expenditure * Square Root of Sum of Squared Deviations of Sales)
+   = 37.8 / (5.73 * 7.61)
+   = 37.8 / 43.57
+   = 0.87 (rounded to two decimal places)
+
+   Therefore, the correlation coefficient between advertising expenditure and sales is 0.87, indicating a strong positive linear relationship between the two variables.
+5.7. Scenario: A survey is conducted to measure the heights of a group of people. The data collected is as follows:
+   [160, 170, 165, 155, 175, 180, 170]
+   Calculate the standard deviation of the heights.
+Ans:
+   Step 1: Calculate the mean of the heights.
+   
+   Mean = (160 + 170 + 165 + 155 + 175 + 180 + 170) / 7
+   = 1175 / 7
+   = 167.86 (rounded to two decimal places)
+   
+   Step 2: Calculate the deviations from the mean for each height.
+   
+   Deviations = [(160 - 167.86), (170 - 167.86), (165 - 167.86), (155 - 167.86), (175 - 167.86), (180 - 167.86), (170 - 167.86)]
+   = [-7.86, 2.14, -2.86, -12.86, 7.14, 12.14, 2.14]
+   
+   Step 3: Square each deviation.
+   
+   Squared Deviations = [(-7.86)^2, (2.14)^2, (-2.86)^2, (-12.86)^2, (7.14)^2, (12.14)^2, (2.14)^2]
+   = [61.7, 4.58, 8.19, 165.14, 51.08, 147.63, 4.58]
+
+   Step 4: Calculate the mean of the squared deviations.
+
+   Mean of Squared Deviations = (61.7 + 4.58 + 8.19 + 165.14 + 51.08 + 147.63 + 4.58) / 7
+   = 442.9 / 7
+   = 63.27 (rounded to two decimal places)
+   
+   Step 5: Calculate the square root of the mean of squared deviations.
+   
+   Standard Deviation = sqrt(63.27)
+   = 7.95 (rounded to two decimal places)
+   
+   Therefore, the standard deviation of the heights [160, 170, 165, 155, 175, 180, 170] is approximately 7.95.
